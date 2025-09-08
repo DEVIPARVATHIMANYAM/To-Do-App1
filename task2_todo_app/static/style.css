@@ -1,0 +1,84 @@
+/* Body & Container */
+body {
+    background-color: #05090c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+/* Task List */
+.list-group-item {
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #b91c1c;
+}
+
+/* Completed tasks */
+.list-group-item input[type="checkbox"]:checked + strong {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Priority Badges */
+.badge-danger {
+    background-color: #dc3545 !important;
+}
+
+.badge-warning {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+.badge-success {
+    background-color: #062215 !important;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #198754;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* Form Fields */
+input.form-control, select.form-select, textarea.form-control {
+    border-radius: 8px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+    .row.g-2 > .col-md-6, .row.g-2 > .col-md-3 {
+        margin-bottom: 10px;
+    }
+}
